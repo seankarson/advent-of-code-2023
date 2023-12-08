@@ -50,7 +50,7 @@ const getHandRank = hand => {
   }
 
   const sortedCounts = Object.values(frequencies).filter(freq => freq !== 0).sort((a, b) => b - a).join('');
-  
+
   if (sortedCounts === '5' || sortedCounts === '4' || sortedCounts === '3' || sortedCounts === '2' || sortedCounts === '1' || sortedCounts === '') {
     return 7;
   } else if (sortedCounts === '41' || sortedCounts === '31' || sortedCounts === '21' || sortedCounts === '11') {
